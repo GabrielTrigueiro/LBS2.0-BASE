@@ -30,7 +30,7 @@ function Search({ onChange, searchPlaceHolder, querrySearching }: Readonly<Props
     <SearchContainer>
       <SearchIcon
         sx={{
-          color: theme.COLORS.BLUE3,
+          color: theme.COLORS.YELLOW2,
           width: 20,
           height: 20,
         }}
@@ -82,7 +82,7 @@ const SearchContainer = styled.div`
   justify-content: space-between;
   &:hover {
     background-color: ${({ theme }) => theme.COLORS.GRAY6};
-    border: 2px solid ${({ theme }) => theme.COLORS.BLUE3};
+    border: 2px solid ${({ theme }) => theme.COLORS.YELLOW2};
   }
 `
 

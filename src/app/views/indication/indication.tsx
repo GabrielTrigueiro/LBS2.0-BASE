@@ -23,7 +23,7 @@ import TableHeader from "app/components/table/tableHeader/TableHeader";
 import theme from "core/theme/theme";
 import Search from "app/components/search/Search";
 
-const IndicationList = () => {
+const Indication = () => {
   const navigate = useNavigate();
   const { isOpen, onOpen, onClose } = useIndicationFilterHook();
   const basicUserInfo = useAppSelector((state) => state.auth.userInfo);
@@ -103,15 +103,9 @@ const IndicationList = () => {
           <AddIcon
             sx={{
               fontSize: "20px",
-              color: theme.COLORS.BLUE3,
+              color: theme.COLORS.YELLOW2,
             }}
           />
-        }
-        mainActionDisabled={
-          !verifyRole(basicUserInfo?.roles, [
-            "ROLE_ADMIN",
-            "ROLE_CRUD_INDICATIONS",
-          ])
         }
       />
       <ContentBody>
@@ -157,4 +151,4 @@ const IndicationList = () => {
   );
 };
 
-export default IndicationList;
+export default Indication;

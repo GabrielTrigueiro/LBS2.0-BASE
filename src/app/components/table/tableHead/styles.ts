@@ -3,7 +3,7 @@ import { TableCell } from "@mui/material";
 
 export const StyledDivDataTable = styled(TableCell)`
   && {
-    background-color: #00aecb;
+    background-color: ${({ theme }) => theme.COLORS.YELLOW2};
     max-width: 100px !important;
     font-weight: bold;
     color: ${({ theme }) => theme.COLORS.WHITE} !important;

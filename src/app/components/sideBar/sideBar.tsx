@@ -155,7 +155,7 @@ function SideBar() {
           />
           <SideBarItem
             icon={ShoppingBasketIcon}
-            link="/vneda"
+            link="/venda"
             label="Caixa"
             notAcceptGroup="CLIENT"
             acepptRoles={[

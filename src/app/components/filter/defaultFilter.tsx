@@ -6,7 +6,7 @@ import {
   SelectChangeEvent,
   Typography,
 } from "@mui/material";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 import { TSelectOption } from "core/models/utils";
 import DefaultModal from "../modals/defaultModal/defaultModal";

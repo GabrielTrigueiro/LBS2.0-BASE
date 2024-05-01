@@ -52,7 +52,7 @@ function TableHeader({
 								<FilterListIcon
 									sx={{
 										fontSize: "20px",
-										color: theme.COLORS.BLUE3,
+										color: theme.COLORS.YELLOW2,
 									}}
 								/>
 							</IconButton>
@@ -87,7 +87,7 @@ function TableHeader({
 							edge="start"
 						>
 							{mainIcon}
-							<Typography color={theme.COLORS.BLUE3}>{mainActionLabel}</Typography>
+							<Typography color={theme.COLORS.YELLOW2}>{mainActionLabel}</Typography>
 						</IconButton>
 					)}
 				</ActionRightSection>

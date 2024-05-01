@@ -10,7 +10,7 @@ const style = {
   boxShadow: 24,
   zIndex: 1000,
   borderLeft: `4px solid`,
-  borderLeftColor: theme.COLORS.BLUE3,
+  borderLeftColor: theme.COLORS.YELLOW2,
 };
 
 export interface IModalProps {

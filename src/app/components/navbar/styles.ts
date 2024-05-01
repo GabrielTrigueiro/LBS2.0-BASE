@@ -35,5 +35,5 @@ export const UserMenu = styled(Box)`
 `;
 
 export const TypographyNav = styled(Typography)`
-  color: ${({ theme }) => theme.COLORS.BLUE3};
+  color: ${({ theme }) => theme.COLORS.YELLOW2};
 `;
