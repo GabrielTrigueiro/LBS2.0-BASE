@@ -11,7 +11,7 @@ import {
 } from "@mui/material";
 import { Validations } from "core/utils/validations";
 import { useState } from "react";
-import { LoginContainer, LoginContentBox, LoginLogo } from "./styles";
+import { LoginContainer, LoginContentBox, LoginLogo } from "../styles";
 import { useFormik } from "formik";
 import { formatDocument } from "core/utils/globalFunctions";
 import GenericTextField from "app/components/genericTextField/GenericTextField";

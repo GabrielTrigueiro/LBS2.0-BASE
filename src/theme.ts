@@ -4,12 +4,12 @@ import theme from "core/theme/theme";
 const PositivoTheme = createTheme({
   palette: {
     primary: {
-      main: "#00AECB",
+      main: theme.COLORS.YELLOW2,
       dark: "#858796",
     },
     secondary: {
-      main: "rgb(16, 175, 205)",
-      light: "#88e3f7",
+      main: theme.COLORS.YELLOW2,
+      light: theme.COLORS.YELLOW,
       dark: "#eaeaea",
     },
   },
@@ -58,16 +58,16 @@ const PositivoTheme = createTheme({
         {
           props: { variant: "outlined" },
           style: () => ({
-            color: theme.COLORS.BLUE3,
+            color: theme.COLORS.YELLOW2,
             fontSize: "1pc",
             border: "2px solid",
-            borderColor: theme.COLORS.BLUE3,
+            borderColor: theme.COLORS.YELLOW2,
             fontWeight: "bold",
             boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.2)",
             letterSpacing: "0.1em",
             padding: "10px 20px 10px 20px",
             "&:hover": {
-              backgroundColor: theme.COLORS.BLUE3,
+              backgroundColor: theme.COLORS.YELLOW2,
               color: theme.COLORS.WHITE,
             },
           }),

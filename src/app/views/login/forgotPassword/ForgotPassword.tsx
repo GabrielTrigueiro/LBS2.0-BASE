@@ -8,13 +8,12 @@ import {
 } from "@mui/material";
 import { Validations } from "core/utils/validations";
 import { useCallback, useState } from "react";
-import { LoginContainer, LoginContentBox, LoginLogo } from "./styles";
+import { LoginContainer, LoginContentBox, LoginLogo } from "../styles";
 import { useFormik } from "formik";
 import { formatDocument, removeNonNumeric } from "core/utils/globalFunctions";
 import PersonOutlineIcon from "@mui/icons-material/PersonOutline";
 import GenericTextField from "app/components/genericTextField/GenericTextField";
 import { sendMessegeService } from "core/api/user/userService";
-import { useNavigate } from "react-router-dom";
 
 type TForgotPassword = {
   login: string;
@@ -22,7 +21,6 @@ type TForgotPassword = {
 
 const ForgotPassword = () => {
   const currentTheme = useTheme();
-  const navigate = useNavigate()
   const isSmallScreen = useMediaQuery(currentTheme.breakpoints.down("sm"));
   const [isLoading, setIsLoading] = useState(false);
 

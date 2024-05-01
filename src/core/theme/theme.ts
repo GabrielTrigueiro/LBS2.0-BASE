@@ -18,6 +18,7 @@ export default {
     RED: "#EB5757",
     ORANGE_300: "#fbb605",
     ORANGE: "#F2994A",
+    YELLOW2: "#DBAB3A",
     YELLOW: "#F2C94C",
     GREEN3: "#6FCF97",
     GREEN2: "#27AE60",

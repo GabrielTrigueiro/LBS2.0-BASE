@@ -15,7 +15,6 @@ import { login } from "core/redux/slices/authSlice";
 import { Validations } from "core/utils/validations";
 import { useCallback, useState } from "react";
 import { LoginContainer, LoginContentBox, LoginLogo } from "./styles";
-import Spinner from "app/components/spinner/spinner";
 import { useFormik } from "formik";
 import { TLogin } from "core/models/user";
 import { formatDocument } from "core/utils/globalFunctions";
@@ -136,7 +135,7 @@ const Login = () => {
             marginRight: -20,
             marginTop: -3,
             textDecoration: "underline",
-            color: theme.COLORS.BLUE3
+            color: theme.COLORS.YELLOW2
           }}
         >
           Esqueci minha senha

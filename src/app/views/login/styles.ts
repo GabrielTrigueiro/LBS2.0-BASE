@@ -1,6 +1,6 @@
 import { Container, Box } from "@mui/material";
 import styled from "styled-components";
-import Logo from "images/assets/logo2.png";
+import Logo from "images/assets/logoLBS.svg";
 
 export const LoginContainer = styled(Container)<{ $small?: boolean }>`
   height: ${(props) => (props.$small ? "100vh" : "70%")};
