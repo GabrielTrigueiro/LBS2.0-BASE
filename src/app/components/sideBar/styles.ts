@@ -1,8 +1,7 @@
 import { Box, List } from "@mui/material";
 import styled from "styled-components";
-import theme from "theme";
-import LogoMin from "images/assets/logoPqn.png";
-import LogoMax from "images/assets/logo2.png";
+import LogoMin from "images/assets/logoLBS.svg";
+import LogoMax from "images/assets/logoLBS.svg";
 
 export const SideBarBody = styled(Box)`
   height: 100%;
@@ -18,7 +17,7 @@ export const SideBarToggle = styled(Box)`
   align-items: center;
   height: 7%;
   &:hover {
-    background-color: ${({ theme }) => theme.COLORS.BLUE};
+    background-color: ${({ theme }) => theme.COLORS.YELLOW};
     .icon {
       color: #fff;
     }

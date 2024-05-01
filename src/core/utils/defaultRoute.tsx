@@ -5,11 +5,8 @@ import { useAppSelector } from "core/hooks/reduxHooks";
 const DefaultRoute = () => {
   const basicUserInfo = useAppSelector((state) => state.auth.userInfo);
 
-  if (localStorage.getItem("userInfo") !== null && basicUserInfo?.group === "CLIENT") {
-    return <Navigate replace to={"/aulas"} />;
-  }
-  else if (localStorage.getItem("userInfo") !== null) {
-    return <Navigate replace to={"/dashboard"} />;
+  if (localStorage.getItem("userInfo") !== null) {
+    return <Navigate replace to={"/clientes"} />;
   }
 
   return (

@@ -11,6 +11,7 @@ import { TRole, verifyRole } from "core/utils/roles";
 import { IconType } from "react-icons";
 import { useResolvedPath, useMatch, Link } from "react-router-dom";
 import theme from "theme"
+import COLORS from 'core/theme/theme'
 
 type TSideBarItem = {
   icon: IconType | (OverridableComponent<SvgIconTypeMap> & { muiName: string });
@@ -47,60 +48,60 @@ function SideBarItem({
         to={link}
       >
         <ListItemButton
-  selected={!!match}
-  sx={{
-    "&.Mui-selected": {
-      background: (theme) => theme.palette.primary.main,
-      color: "#fff",
-      "& .MuiSvgIcon-root": {
-        color: "#fff",
-      },
-    },
-    "& .MuiSvgIcon-root": {
-      color: "rgba(255, 255, 255, 0.5)",
-      transition: "color 0.3s",
-    },
-    ":hover": {
-      background: "#88e3f7",
-      color: "#fff",
-      "& .MuiSvgIcon-root": {
-        color: "#fff",
-      },
-    },
-    "&:hover, &.Mui-selected:hover": {
-      background: "#88e3f7",
-      color: "#fff",
-      "& .MuiSvgIcon-root": {
-        color: "#fff",
-      },
-    },
-    "&:not(:hover):not(.Mui-selected) .MuiSvgIcon-root": {
-      color: "#8c8c8c",
-    },
-    animation: "ease",
-    transition: "all 0.3s ease",
-    width: "100%",
-    borderRadius: "5px",
-    display: "flex",
-    justifyContent: "flex-start",
-    alignItems: "center",
-    gap: 2,
-    padding: "5%",
-    ...(!isOpen && {
-      height: 40,
-      justifyContent: "center",
-    }),
-  }}
->
-  {!isOpen ? (
-    <Icon />
-  ) : (
-    <>
-      <Icon />
-      {label}
-    </>
-  )}
-</ListItemButton>
+          selected={!!match}
+          sx={{
+            "&.Mui-selected": {
+              background: (theme) => theme.palette.primary.main,
+              color: "#fff",
+              "& .MuiSvgIcon-root": {
+                color: "#fff",
+              },
+            },
+            "& .MuiSvgIcon-root": {
+              color: "rgba(255, 255, 255, 0.5)",
+              transition: "color 0.3s",
+            },
+            ":hover": {
+              background: COLORS.COLORS.YELLOW,
+              color: "#fff",
+              "& .MuiSvgIcon-root": {
+                color: "#fff",
+              },
+            },
+            "&:hover, &.Mui-selected:hover": {
+              background: COLORS.COLORS.YELLOW,
+              color: "#fff",
+              "& .MuiSvgIcon-root": {
+                color: "#fff",
+              },
+            },
+            "&:not(:hover):not(.Mui-selected) .MuiSvgIcon-root": {
+              color: "#8c8c8c",
+            },
+            animation: "ease",
+            transition: "all 0.3s ease",
+            width: "100%",
+            borderRadius: "5px",
+            display: "flex",
+            justifyContent: "flex-start",
+            alignItems: "center",
+            gap: 2,
+            padding: "5%",
+            ...(!isOpen && {
+              height: 40,
+              justifyContent: "center",
+            }),
+          }}
+        >
+          {!isOpen ? (
+            <Icon />
+          ) : (
+            <>
+              <Icon />
+              {label}
+            </>
+          )}
+        </ListItemButton>
 
       </Link>
     </Tooltip>

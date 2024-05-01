@@ -12,7 +12,6 @@ import store, { persistor } from "./core/redux/store";
 import "./index.css";
 import { PersistGate } from "redux-persist/integration/react";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import Footer from "app/components/footer/Footer";
 
 const query = new QueryClient();
 
@@ -26,7 +25,6 @@ ReactDOM.render(
             <BrowserRouter>
               <FullScreenContainer>
                 <App />
-                
               </FullScreenContainer>
             </BrowserRouter>
           </Provider>
