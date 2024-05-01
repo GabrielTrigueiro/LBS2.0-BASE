@@ -1,6 +1,7 @@
 import React from "react";
 import { Box, Divider, TablePagination } from "@mui/material";
 import { IPropsPagination } from "core/models/paginationTable";
+import theme from "core/theme/theme";
 
 export default function DataTablePagination(props: IPropsPagination) {
   const handleChangePage = (
@@ -16,7 +17,7 @@ export default function DataTablePagination(props: IPropsPagination) {
     props.setPage(0);
   };
   return (
-    <Box>
+    <Box sx={{ background: theme.COLORS.WHITE }}>
       <Divider />
       <TablePagination
         sx={{ overflow: "hidden" }}

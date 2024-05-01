@@ -9,8 +9,10 @@ import Client from "./views/client/client";
 import Colaborator from "./views/colaborator/colaborator";
 import Indication from "./views/indication/indication";
 import Provider from "./views/provider/provider";
-import Category from "@mui/icons-material/Category";
 import Product from "./views/product/product";
+import RegisterProduct from "./views/registers/product/registerProduct";
+import Category from "./views/category/category";
+import RegisterIndication from "./views/registerIndication/registerIndication";
 
 function App() {
   return (
@@ -28,6 +30,8 @@ function App() {
         <Route path="/produtos" element={<Product />} />
         <Route path="/colaboradores" element={<Colaborator />} />
         <Route path="/venda" element={<>venda</>} />
+        <Route path="/registrarIndicacao" element={<RegisterIndication />} />
+        <Route path="/registrarProduto" element={<RegisterProduct />} />
       </Route>
       <Route path="*" element={<Navigate to="/login" />} />
 

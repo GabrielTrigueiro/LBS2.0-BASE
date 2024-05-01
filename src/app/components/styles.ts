@@ -28,18 +28,18 @@ export const PageContentContainer = styled(Box)`
   flex-direction: column;
   flex: 1;
   margin-top: -15px;
-  min-height: 100svh; 
+  min-height: 100svh;
 `;
 
 // * Page components Card
-export const ContainerCard = styled(Card) <{ $full?: boolean }>`
+export const ContainerCard = styled(Card)<{ $full?: boolean }>`
   margin-top: 1%;
   display: flex;
   flex-direction: column;
   height: ${(props) => (props.$full ? "95%" : "70%")};
   width: 100%;
   flex-grow: 1;
-  max-height: 50svh; 
+  max-height: 50svh;
 `;
 
 export const StyledCardHeader = styled(CardHeader)`
@@ -80,7 +80,7 @@ export const Container = styled(Box)`
 `;
 
 export const Title = styled(Typography)`
-  color: ${({ theme }) => theme.COLORS.BLUE3} !important;
+  color: ${({ theme }) => theme.COLORS.YELLOW2} !important;
   font-size: 1.7rem !important;
   font-weight: bold !important;
   padding-left: 1rem;
@@ -101,7 +101,7 @@ export const InfoCardContainer = styled(Box)`
 
 export const InfoCardTitle = styled(Typography)`
   color: ${({ theme }) => theme.COLORS.WHITE} !important;
-  background: ${({ theme }) => theme.COLORS.BLUE3} !important;
+  background: ${({ theme }) => theme.COLORS.YELLOW2} !important;
   font-size: ${({ theme }) => theme.FONTS_SIZE.LG} !important;
   font-weight: bold !important;
   width: min-content;
@@ -112,7 +112,7 @@ export const InfoCardTitle = styled(Typography)`
 export const InfoCard = styled(Box)`
   display: flex;
   flex-direction: column;
-  border: 2px solid ${({ theme }) => theme.COLORS.BLUE3};
+  border: 2px solid ${({ theme }) => theme.COLORS.YELLOW2};
   padding: 0.3rem;
   width: 100%;
   gap: 0.5rem;

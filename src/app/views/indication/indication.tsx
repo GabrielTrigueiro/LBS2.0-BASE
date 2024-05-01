@@ -88,7 +88,7 @@ const Indication = () => {
         filter={filters}
         remove={removeFilter}
         mainActionLabel="Cadastrar indicação"
-        mainActionFunction={() => navigate("/cadastroIndicacao")}
+        mainActionFunction={() => navigate("/registrarIndicacao")}
         extraComponents={
           <Search
             searchPlaceHolder="Cpf/cnpj da indicação..."
